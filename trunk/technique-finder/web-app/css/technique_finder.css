@@ -1,0 +1,163 @@
+/*
+ * Author: Intersect Australia Limited
+ * Project: AMMRF Technique Finder
+ * Date: March 2010
+ * Version: 0.3
+ */
+
+
+/******************
+ ** CSS CONTENTS **
+ ******************
+* 1 Roll Over Sprites
+* 2 Table Styles
+* 3 Other
+*/
+
+
+/*********************
+ * ROLL OVER SPRITES *
+ *********************/
+
+.buttons ul .nav_buttons ul{ /*removes disc for all bullet points that are buttons */
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+.buttons ul li, .nav_buttons ul li {
+	display:inline;
+	margin:0;
+	padding:0;
+}
+
+.buttons a {
+	margin:0 1.5em;
+	height:50px;
+	float:left;
+	background-position:0;
+	width:185px;
+}
+
+#button_bio a {background:url(../images/ammrf/button_choices_bio.gif);}
+#button_bio a:hover, #button_bio a:active{background-position:0 -50px;}
+	
+#button_phys a {background:url(../images/ammrf/button_choices_phys.gif)}
+#button_phys a:hover, #button_bio a:active{background-position:0 -50px;}
+
+
+.nav_buttons a {
+	height:18px;
+	float:left;
+	margin:0;
+	padding:0;
+}
+
+.go_container a {
+	height:18px;
+	float:left;
+	margin:0;
+	padding:0;
+}
+
+#button_backBio a {background:url(../images/ammrf/button_back_to_choices_bio.gif); width:258px;}
+#button_backBio a:hover, #button_backBio a:active{background-position:0 -18px;}
+
+#button_backPhys a {background:url(../images/ammrf/button_back_to_choices_phys.gif); width:246px;}
+#button_backPhys a:hover, #button_backPhys a:active{background-position:0 -18px;}
+
+#button_backStart a {background:url(../images/ammrf/button_start_again.gif); width:88px;}
+#button_backStart a:hover, #button_backPhys a:active{background-position:0 -18px;}
+
+#button_backAllTech a {background:url(../images/ammrf/button_backtoavailabletech.gif); width:235px;}
+#button_backAllTech a:hover, #button_backAllTech a:active{background-position:0 -18px;}
+
+#button_backPosTech a {background:url(../images/ammrf/button_back_to_pos_tech.gif); width:188px;}
+#button_backPosTech a:hover, #button_backPosTech a:active{background-position:0 -18px;}
+
+#button_showPosTech a {background:url(../images/ammrf/button_show_pos_tech.gif); width:173px;}
+#button_showPosTech a:hover, #button_showPosTech a:active{background-position:0 -18px;}
+
+#button_go a {background:url(../images/ammrf/button_go.gif); width:38px;}
+#button_viewList a {background:url(../images/ammrf/button_view_list.gif); width:71px;}
+#button_go a:hover, #button_viewList a:hover, #button_showPosTech a:active{background-position:0 -18px;}
+
+#disabled_showPosTech{background:url(../images/ammrf/button_show_pos_tech.gif); background-position:0 -36px; width:173px; height:18px;}
+
+/****************
+ * TABLE STYLES *
+ ****************/
+.yellow_box {
+	background:#fef2bf;
+	padding:1em;
+}
+
+.caption {
+	width:100%;
+	font-style:italic;
+	display: block;
+ 	margin-left: auto;
+ 	margin-right: auto;
+ 	text-align: left;
+}
+
+.buttonDiv{
+	list-style-image:url(../images/ammrf/tf_bullet_inactive.gif);
+	cursor:pointer;
+}
+
+/*********
+ * OTHER *
+ *********/
+
+.right{float:right; margin:0; padding:0}
+.left{float:left; margin:0; padding:0}
+.clear{clear:both;}
+.alignleft{text-align: left;}
+.alignright{text-align: right;}
+.aligncenter{text-align: center;}
+
+/***********************
+ * MESSAGES AND ERRORS *
+ ***********************/
+
+.message {
+    background: #f3f8fc url(../images/skin/information.png) 8px 50% no-repeat;
+    border: 1px solid #b2d1ff;
+    color: #006dba;
+    margin: 10px 0 5px 0;
+    padding: 5px 5px 5px 30px
+}
+
+div.errors {
+    background: #fff3f3;
+    border: 1px solid red;
+    color: #cc0000;
+    margin: 10px 0 5px 0;
+    padding: 5px 0 5px 0;
+}
+div.errors ul {
+    list-style: none;
+    padding: 0;
+}
+div.errors li {
+	background: url(../images/skin/exclamation.png) 8px 0% no-repeat;
+    line-height: 16px;
+    padding-left: 30px;
+}
+
+td.errors select {
+    border: 1px solid red;
+}
+td.errors input {
+    border: 1px solid red;
+}
+
+/********************************
+ * PAGINATION IN SEARCH RESULTS *
+ ********************************/
+.paging a.step {
+    padding: 0 .3em;
+}
+
+.paging span.currentStep { font-weight: bold; }

@@ -1,0 +1,103 @@
+/*** 
+ ** Main-Navigation Level 1
+ */
+
+.navLevel1{
+	font-size: 12px;
+	text-decoration:none;
+	color: #181818;
+
+	background-image: url(../images/ammrf/icons/nav_level1_high.gif);
+	background-repeat: no-repeat;
+	background-position: 0 5px;
+	display:block;
+	padding-left: 15px;
+}
+
+.navLevel1:hover{
+	font-size: 12px;
+	text-decoration:none;
+	color: #c75a1c;
+
+	background-image: url(../images/ammrf/icons/nav_level1_high.gif);
+	background-repeat: no-repeat;
+	background-position: 0 5px;
+
+	display:block;
+	padding-left: 15px;
+}
+
+.navLevel1Active{
+	font-size: 12px;
+	text-decoration:none;
+	color: #c75a1c;
+	font-weight: bold;
+
+	background-image: url(../images/ammrf/icons/nav_level1_high.gif);
+	background-repeat: no-repeat;
+	background-position: 0 5px;
+
+	display:block;
+	padding-left: 15px;
+}
+
+/*** 
+ ** Main-Navigation Level 2
+ */
+.navLevel2{
+	font-size: 12px;
+	line-height:20px;
+	text-decoration:none;
+	color: #181818;
+	
+	background-image: url(../images/ammrf/icons/nav_level2.gif);
+	background-repeat: no-repeat;
+	background-position: 0 8px;
+	
+	display:block;
+	padding-left: 10px;
+}
+
+.navLevel2:hover{
+	font-size: 12px;
+	line-height:20px;
+	text-decoration:none;
+	color: #c75a1c;
+	
+	background-image: url(../images/ammrf/icons/nav_level2_high.gif);
+	background-repeat: no-repeat;
+	background-position: 0 8px;
+	
+	display:block;
+	padding-left: 10px;
+}
+
+.navLevel2Active{
+	font-size: 12px;
+	line-height:20px;
+	text-decoration:none;
+	color: #c75a1c;
+	
+	background-image: url(../images/ammrf/icons/nav_level2_high.gif);
+	background-repeat: no-repeat;
+	background-position: 0 8px;
+	
+	display:block;
+	padding-left: 10px;
+}
+
+/*** 
+ ** SITEMAP Level 1
+ */
+ 
+.sitemapLevel1{
+	margin: 2px 0 4px 0px;
+}
+
+.sitemapLevel2{
+	margin: 2px 0 4px 50px;
+}
+
+.sitemapLevel3{
+	margin: 2px 0 4px 90px;
+}

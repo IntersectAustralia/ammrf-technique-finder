@@ -1,0 +1,115 @@
+form {
+	margin:0;
+	padding:0;
+}
+
+#logo{
+	position: absolute;
+	top:0;
+	left:0;
+	width: 174px;
+	height: 76px;
+
+	padding-top: 20px;
+	padding-left: 15px;
+}
+
+#head{
+	position: absolute;
+	top: 0px;
+	left: 205px;
+	width: 780px; 
+	height: 89px; 
+	border-left: 1px solid #B2B3B6;
+	border-bottom: 1px solid #B2B3B6;
+
+	padding-top: 0px;
+	padding-left: 15px; 
+}
+
+#nav {
+	position: absolute;
+	top:150px;
+	left:0;
+	width: 200px;
+	height: 550px;
+	padding-left: 5px;
+
+	background-image: url('../images/ammrf/bg_nav.gif');
+	background-repeat: no-repeat;
+	background-position: 5px 0px;
+}
+ 
+#main {
+	position:absolute;
+	top: 90px; 
+	left: 205px;
+	width: 545px; 
+	text-align: left;
+	padding: 15px 0 10px 15px;
+
+	border-left: 1px solid #B2B3B6;
+	border-right: 0px solid #B2B3B6;
+/*	background-color: #dedede;  */
+}
+
+#content{
+	margin-top:10px;
+	width: 530px; 
+/*	background-color: #EFEFEF; */
+}
+
+#main_broad {
+	position:absolute;
+	top: 120px; 
+	left: 223px;
+	width: 720px; 
+	text-align: left;
+	padding: 20px 0 20px 30px;
+
+	border-left: 1px solid #B2B3B6;
+/*	background-color: #dedede;  */
+}
+
+#content_broad{
+	margin-top:25px;
+/*	background-color: #EFEFEF; */
+}
+
+#footer{
+	top: 10px; 
+	left: 0px;
+	margin-top: 10px; 
+	padding: 0 25px 0 0;
+/*	background-color: #efefef; */
+}
+
+#footer a {
+	font-size:1em;
+}
+
+#attribution_ammrf {
+	float:left;
+}
+
+#attribution_intersect {
+	float:right;
+}
+
+.intersect_logo_link  {
+	background:url("../images/intersect_logo.png") no-repeat scroll 0 0 transparent;
+	display:inline-block;
+	height:14px;
+	vertical-align:middle;
+	width:14px;
+	padding-right:0.3em;
+}
+
+#infobox{
+	position: absolute;
+	top: 100px;
+	left: 785px;
+	width: 220px;
+	height: 550px;
+/*	background-color: #dedede; */
+}

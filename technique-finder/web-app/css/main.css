@@ -1,0 +1,631 @@
+/********************
+ * COLOUR REFERENCE *
+ ********************
+ Navy Blue............#003b76
+ Dark Orange..........#e96214
+ Light Orange.........#fcc328
+*/
+
+
+/*********
+ * RESET *
+ *********/
+html * {
+    margin: 0;
+    /*padding: 0; SELECT NOT DISPLAYED CORRECTLY IN FIREFOX */
+}
+
+/***********
+ * GENERAL *
+ ***********/
+body {
+    background: #fff;
+    color: #333;
+    font: 11px verdana, arial, helvetica, sans-serif;
+}
+
+a:link, a:visited {
+    color:#e96214;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+	color:#003b76;
+}
+
+h1 {
+    color: #003b76;
+    font-weight: normal;
+    font-size: 16px;
+    margin: .8em 0 .3em 0;
+}
+
+ul {
+    padding-left: 15px;
+}
+
+input, select, textarea {
+    background-color: #fcfcfc;
+    border: 1px solid #ccc;
+    font: 11px verdana, arial, helvetica, sans-serif;
+    margin: 2px 0;
+    padding: 2px 4px;
+}
+select {
+   padding: 2px 2px 2px 0;
+   width: 95%;
+}
+
+textarea {
+	width: 95%;
+	height: 150px;
+	vertical-align: top;
+}
+
+input:focus, select:focus, textarea:focus {
+    border: 1px solid #b2d1ff;
+}
+
+.body {
+    float: left;
+    margin: 0 15px 5em 15px;
+	min-width:1024px;
+	max-width:1440px;
+	height:100%;
+	
+}
+
+
+
+.identity {
+	margin: 0 10px 0px 0px; 
+	float: right;
+}
+
+.footer {
+	display:block;
+	background:url("../images/skin/shadow.jpg") repeat-x scroll center bottom #FFFFFF;
+	border-color:#CCCCCC;
+	border-style:solid;
+	border-width:1px;
+	margin:5px 20px;
+	padding:7px 12px;
+	text-align:center;
+	height: 17px;
+	padding: -100px auto 0 auto;
+	position: relative;
+}
+
+.intersect_logo_link  {
+	background:url("../images/intersect_logo.png") no-repeat scroll 0 0 transparent;
+	display:inline-block;
+	height:14px;
+	vertical-align:middle;
+	width:14px;
+	padding-right:0.3em;
+}
+
+
+/*******************
+ * NAVIGATION MENU *
+ *******************/
+
+.nav {
+    background: #fff url(../images/skin/shadow.jpg) bottom repeat-x;
+    border: 1px solid #ccc;
+    border-style: solid none solid none;
+    margin-top: 5px;
+    padding: 7px 12px;
+}
+
+.menuButton {
+    font-size: 1em;
+	padding: 0 3px;
+}
+.menuButton a {
+    color: #e96214;
+    padding: 4px 6px;
+}
+.menuButton a.home {
+    background: url(../images/skin/house.png) center left no-repeat;
+    color: #e96214;
+    padding-left: 20px;
+}
+.menuButton a.list {
+    background: url(../images/skin/database_table.png) center left no-repeat;
+    color: #e96214;
+    padding-left: 20px;
+}
+.menuButton a.create {
+    background: url(../images/skin/database_add.png) center left no-repeat;
+    color: #e96214;
+    padding-left: 18px;
+}
+
+.menuButton a:hover {
+	color:#003b76;
+}
+
+/*********************
+ * MESSAGES & ERRORS *
+ *********************/
+
+.message {
+    background: #f3f8fc url(../images/skin/information.png) 8px 50% no-repeat;
+    border: 1px solid #b2d1ff;
+    color: #006dba;
+    margin: 10px 0 5px 0;
+    padding: 5px 5px 5px 30px
+}
+
+div.errors {
+    background: #fff3f3;
+    border: 1px solid red;
+    color: #cc0000;
+    margin: 10px 0 5px 0;
+    padding: 5px 0 5px 0;
+}
+div.errors ul {
+    list-style: none;
+    padding: 0;
+}
+div.errors li {
+	background: url(../images/skin/exclamation.png) 8px 0% no-repeat;
+    line-height: 16px;
+    padding-left: 30px;
+}
+
+td.errors select {
+    border: 1px solid red;
+}
+td.errors input {
+    border: 1px solid red;
+}
+
+/**********
+ * TABLES *
+ **********/
+
+table {
+    border: 1px solid #ccc;
+}
+tr {
+    border: 0;
+}
+td, th {
+    font: 11px verdana, arial, helvetica, sans-serif;
+    line-height: 12px;
+    padding: 5px 6px;
+    text-align: left;
+    vertical-align: top;
+}
+th {
+    background: #fff url(../images/skin/shadow.jpg);
+    color: #666;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 17px;
+    padding: 2px 6px;
+	text-transform:capitalize;
+	text-align:center;
+}
+th a:link, th a:visited, th a:hover {
+    color: #333;
+    display: block;
+    font-size: 10px;
+    text-decoration: none;
+    width: 100%;
+}
+th.asc a, th.desc a {
+    background-position: right;
+    background-repeat: no-repeat;
+}
+th.asc a {
+    background-image: url(../images/skin/sorted_asc.gif);
+}
+th.desc a {
+    background-image: url(../images/skin/sorted_desc.gif);
+}
+
+.odd {
+    background: #f7f7f7;
+}
+.even {
+    background: #e9e9e9;
+}
+
+/*********
+ * LISTS *
+ *********/
+
+.list table {
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 1024px;
+    max-width: 1440px;
+}
+.list th, .list td {
+    border-left: 1px solid #ddd;
+}
+.list th:hover, .list tr:hover {
+    background: #dee5f0;
+}
+
+ul.menu_links {
+	margin:2em;
+	min-width:10px;
+        float:left;
+	display: block;
+	width: 25%;
+}
+
+.menu_links li {
+	line-height:2em;
+	list-style:none;
+	margin-left:5em;
+	margin:1em;
+	text-align: center;
+}
+
+.menu_links li a {
+	text-decoration: none;
+	display: block;
+	padding: 2px;
+	color:#e46600;
+	margin:0 3px;
+	background:url(../images/ammrf/overlay.png) repeat-x center #f5e0c1;
+	border:1px solid #ccc;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	border-bottom:1px solid #9f9f9f;
+	-moz-box-shadow:inset 0 1px 0 rgba(255, 255, 255, 0.5);
+	-webkit-box-shadow:inset 0 1px 0 rgba(255, 255, 255, 0.5);
+	box-shadow:inset 0 1px 0 rgba(255, 255, 255, 0.5);
+	cursor:pointer; /* Making it clickable */
+}
+
+.menu_links li a:hover {
+	background: #f4d09b;
+	border: 1px solid e9a670;
+}
+
+.action_links li {
+	list-style:none;
+	text-align: center;
+	display: block;
+	float: left;
+
+}
+
+.action_links li a {
+	text-decoration: none;
+	font-size:0.9em;
+	display: block;
+	padding: 0.5em;
+	color:#333;
+	margin:0 3px;
+	background:url(../images/ammrf/overlay.png) repeat-x center #f5e0c1;
+	border:1px solid #ccc;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	border-bottom:1px solid #9f9f9f;
+	-moz-box-shadow:inset 0 1px 0 rgba(255, 255, 255, 0.5);
+	-webkit-box-shadow:inset 0 1px 0 rgba(255, 255, 255, 0.5);
+	box-shadow:inset 0 1px 0 rgba(255, 255, 255, 0.5);
+	cursor:pointer; /* Making it clickable */
+}
+
+.action_links li a:hover {
+	border: 1px solid e9a670;
+	color:#003b76;
+}
+
+
+
+/**************
+ * PAGINATION *
+ **************/
+
+.paginateButtons {
+    background: #fff url(../images/skin/shadow.jpg) bottom repeat-x;
+    border: 1px solid #ccc;
+    border-top: 0;
+    color: #666;
+    font-size: 10px;
+    overflow: hidden;
+    padding: 10px 3px;
+}
+
+.paginateButtons a {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-color: #ccc #aaa #aaa #ccc;
+    color: #666;
+    margin: 0 3px;
+    padding: 2px 6px;
+}
+
+.paginateButtons span {
+    padding: 2px 3px;
+}
+
+/**********
+ * DIALOG *
+ **********/
+.dialog {
+	clear: both;
+}
+.dialog table {
+    padding: 5px 0;
+	margin-top:1em;
+}
+
+.prop {
+    padding: 5px;
+}
+
+.prop .name {
+    text-align: left;
+    width: 15%;
+    white-space: nowrap;
+	color:#e96214;
+	font-weight:bold;
+}
+
+.prop .value {
+    text-align: left;
+    width: 85%;
+}
+
+/******************
+ * ACTION BUTTONS *
+ ******************/
+
+.buttons {
+	width:auto;
+	text-decoration: none;
+	display: block;
+	
+	color:#e46600;
+	margin:0 3px;
+	background:url(../images/ammrf/overlay.png) repeat-x center #f5e0c1;
+	border:1px solid #ccc;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	border-bottom:1px solid #9f9f9f;
+	-moz-box-shadow:inset 0 1px 0 rgba(255, 255, 255, 0.5);
+	-webkit-box-shadow:inset 0 1px 0 rgba(255, 255, 255, 0.5);
+	box-shadow:inset 0 1px 0 rgba(255, 255, 255, 0.5);
+	cursor:pointer; /* Making it clickable */
+	margin-top:1em;
+	float:left;
+}
+
+.buttons input:hover {
+	color:#003b76;
+}
+
+.buttons input {
+    background: #fff;
+    border: 0;
+    color: #333;
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: bold;
+    overflow: visible;
+    padding: 2px 6px;
+}
+
+.buttons input.save {
+    background: transparent url(../images/skin/database_save.png) 5px 50% no-repeat;
+    padding-left: 23px;
+}
+
+.buttons input.edit {
+    background: transparent url(../images/skin/database_edit.png) 5px 50% no-repeat;
+    padding-left: 20px;
+}
+
+.buttons input.delete {
+    background: transparent url(../images/skin/database_delete.png) 5px 50% no-repeat;
+    padding-left: 20px;
+}
+
+.buttons input.cancel {
+    background: transparent url(../images/skin/database_cancel.png) 5px 50% no-repeat;
+    padding-left: 20px;
+}
+
+a .view {
+	padding:10px;
+	margin:10px 0;
+	font-size:0.9em;
+	background:url(../images/skin/database_view.png) center left no-repeat;
+}
+
+a .delete {
+	padding:10px;
+	margin:10px 0;
+	font-size:0.9em;
+	background:url(../images/skin/database_delete.png) center left no-repeat;
+}
+
+a .edit {
+	padding:10px;
+	margin:10px 0;
+	font-size:0.9em;
+	background:url(../images/skin/database_edit.png) center left no-repeat;
+}
+
+a .add {
+	padding:10px;
+	margin:10px 0;
+	font-size:0.9em;
+	background:url(../images/skin/database_add.png) center left no-repeat;
+}
+
+a .save {
+	padding:10px;
+	margin:10px 0;
+	font-size:0.9em;
+	background:url(../images/skin/database_save.png) center left no-repeat;
+}
+
+.move_container{
+	list-style:none;
+	line-height:0.9em;
+	padding-left: 1em;
+}
+
+.up_active{
+	padding:2px;
+	font-size:0.9em;
+	height:11px;
+	width:16px;
+	line-height:0.9em;
+	background:url(../images/ammrf/arrow_active_up.png) center left no-repeat;
+}
+
+.up_inactive{
+	padding:2px;
+	font-size:0.9em;
+	height:11px;
+	width:16px;
+	line-height:0.9em;
+	background:url(../images/ammrf/arrow_inactive_up.png) center left no-repeat;
+}
+
+.down_active{
+	float:left;
+	height:11px;
+	width:16px;
+	background:url(../images/ammrf/arrow_active_down.png) center left no-repeat;
+}
+
+.down_inactive{
+	float:left;
+	font-size:0.9em;
+	height:11px;
+	width:16px;
+	background:url(../images/ammrf/arrow_inactive_down.png) center left no-repeat;
+}
+
+
+/****************
+ * LOGIN STYLES *
+ ****************/
+ #login {
+	margin:15px 0px; 
+	padding:0px;
+	text-align:center;
+}
+
+#login .inner {
+	width:400px;
+	margin:0px auto;
+	text-align:left;
+	padding:10px 10px 15px 10px;
+	background-color:#e8e8e8;
+	border:#ccc 1px solid;
+}
+
+#login .inner .cssform p {
+	clear: left;
+	margin: 0 auto;
+	padding-top: 5px;
+	padding-left: 105px;
+	text-align:right;
+	height: 1%;
+}
+
+#login .inner .cssform input[type='text'] {
+	width: 220px;
+	float:left;
+}
+
+#login .inner .cssform input{
+	font-size:1.5em;
+}
+
+#login .inner .cssform label {
+	font-weight: normal;
+	float: left;
+	margin-left: -105px;
+	width: 130px;
+	font-size:1.3em;
+	margin-right:1em;
+	margin-top:3px;
+}
+
+#login .inner .login_message {color:red;}
+
+#login .inner .text_ {width:220px; float:left;}
+
+#login .inner .chk {height:1.5em; float:left; background:none; border:none;}
+
+
+/********************************
+ * SOME STYLES FROM PUBLIC SITE *
+ ********************************/
+.yellow_box {
+	background:#fef2bf;
+	padding:1em;
+	line-height:19px;
+	border:1px solid #D3D3D3;
+}
+
+.caption {
+	width:100%;
+	font-style:italic;
+}
+
+.buttonDiv{
+	list-style-image:url(../images/ammrf/tf_bullet_inactive.gif);
+	cursor:pointer;
+}
+
+ul {
+	margin-bottom:25px;
+	margin-top:10px;
+}
+
+
+.right{float:right; margin:0; padding:0}
+.left{float:left; margin:0; padding:0}
+.clear{clear:both;}
+.alignleft{text-align: left;}
+.alignright{text-align: right;}
+.aligncenter{text-align: center;}
+
+table.optionChoices {
+	width: ;
+	border:none;
+	float:left;
+}
+
+.optionChoices td, th {
+	line-height:16px;
+}
+
+
+
+
+
+/*****************************************
+ * CHANGES by NOELENE FAJARDO 23-04-2010 *
+ *****************************************/
+ 
+.associatedTechniques { list-style-type: none; margin: 0; padding: 0; width: 400px; }
+.associatedTechniques li { margin: 0 3px 3px 3px; padding: 0.4em; padding-left: 1.5em; font-size: 1.4em; }
+.associatedTechniques li span { position: absolute; margin-left: -1.3em; }
+
+
+.techniqueList {
+ 	float: right; 
+	padding-left: 5em;
+	margin-top:1em;
+}

@@ -1,0 +1,251 @@
+body {
+	background-color: #FFFFFF;
+	margin:0;
+	padding:0;
+} 
+
+.hidden{
+/* if display: none; is set, the top-link will not work in IE6 - why ever*/
+/*	display: none; */
+	color: #FFF; 
+}
+
+div, span, a{
+	font-family: arial, verdana, sans-serif;
+	font-size: 12px; 
+	line-height:19px;
+	color: #181818;
+}
+
+.red{
+	font-size: 11px;
+	font-weight:normal;
+	color: #d78715; 
+}
+
+.orange{
+	font-size: 12px;
+	font-weight: bold;
+	font-weight:normal;
+	color: #c75a1c; 
+}
+
+.program {
+	font-size: 11px;
+	line-height: 16px;
+}
+
+td.h2{
+	font-size: 11px;
+	color: #d78715;
+	font-weight: bold;
+	margin:0;
+	padding:0;
+}
+
+td.h3{
+	font-size: 11px;
+	font-weight: bold;
+	color: #181818;
+	margin:0;
+	padding:0;
+}
+
+td.h4{
+	font-size: 11px;
+	font-weight: bold;
+	color: #FFF;
+	background-color: #003e81;
+	padding: 0 3px 1px 3px;
+	margin: 0;
+}
+
+td.h5{
+	font-size: 11px;
+	font-weight: bold;
+	color: #181818;
+	background-color: #E9E8E8;
+	padding: 0 0 3px 3px;
+}
+
+img {
+	border:0;
+}
+
+img.bar{
+	margin-right:10px;
+	margin-bottom:10px;
+	border: 1px solid #ADACAC;
+	width:96px;
+	height:70px;
+}
+
+img.bar_broad{
+	margin-bottom:10px;
+	border: 1px solid #ADACAC;
+	width:718px;
+	height:66px;
+}
+
+a{
+	text-decoration: underline;	
+	color: #225eb8;
+}
+
+a.content:visited{
+	color:#6a8eaf;
+}
+
+i{
+	color: #181818;
+}
+
+#footer {
+	font-size: 10px;
+}
+
+#icon{
+	padding: 0px;
+	margin-right: 5px;
+	border:0px;
+	vertical-align: middle;
+}
+
+h1{
+	font-size: 16px;
+	font-weight: bold;
+	color: #c75a1c;
+}
+
+h2 {
+	font-size: 12px;
+	font-weight: bold;
+	color: #c75a1c;
+	margin: 0px;
+	padding: 0px;
+}
+
+h3 {
+	font-size: 12px;
+	font-weight: bold;
+	margin: 0px;
+	padding: 0px;
+}
+
+h4 {
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFF;
+	background-color: #003e81;
+	padding: 0 7px 0px 7px;
+	margin: 10px 0 2px 0;
+}
+
+h5 {
+	font-size: 12px;
+	font-weight: bold;
+	background-color: #E9E8E8;
+	padding: 0 7px 0px 7px;
+	margin: 10px 0 2px 0;
+	color: #181818;
+}
+
+h6 {
+	font-size: 12px;
+	font-weight: bold;
+	background-color: #d78715;
+	padding: 0 7px 0px 7px;
+	margin: 10px 0 2px 0;
+	color: #181818;
+}
+
+
+.top{
+	text-align:left;
+	text-decoration:none;
+	font-size:10px;
+	color: #181818;
+	padding-left: 12px;
+
+	background-image:url(../images/ammrf/icons/icon_top.gif);
+	background-repeat: no-repeat;
+	background-position: 0 4px;
+}
+
+hr {
+    height: 1px;
+    color: #d78715;
+	background-image:url(../images/ammrf/hr.gif);
+    border: none;
+	padding:0;
+	margin:0 0 5px 0;
+}
+
+/*
+hr {
+	height: 1px;
+	border-width: 1px 0 0 0;
+	border-style: dashed;
+	border-color: #d78715;
+}
+
+.hr {
+	background-image: url('../images/ammrf/hr.gif');
+	height: 1px;
+	padding:0;
+}
+*/
+
+UL{
+	margin-top: 10px;
+	list-style-image:url(../images/ammrf/icons/icon_list.gif);
+}
+
+OL{
+	margin-top: 10px;
+	margin-bottom: 25px;
+}
+
+LI {
+	margin-bottom: 1px;
+	margin-left: -15px;
+}
+
+form {
+	margin:0px;
+}
+
+#formField{	
+	width: 195px;
+}
+
+#formLabel{	
+	font-size:70%
+}
+
+.textField {
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size:10px;	
+	color:#70635A;
+	width: 195px;
+    border: 1px solid #CDCBBC;
+	background-color: #FFFFFF;
+	overflow:hidden;
+}
+
+.errFormField{	
+	font-family: Verdana, Arial, Helvetica, sans-serif; 
+	font-size:100%;	
+	width: 196px;
+	background-color: #FEF7FA; 
+	border:1px solid #BD0307;
+	overflow:hidden;
+}
+
+.comboBox {
+	border: 1px solid;
+}
+
+
+/* TECHNIQUE FINDER STYLES */
+

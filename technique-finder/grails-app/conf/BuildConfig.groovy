@@ -16,24 +16,24 @@ grails.project.dependency.resolution = {
         // uncomment the below to enable remote dependency resolution
         // from public Maven repositories
         mavenLocal()
-        mavenRepo "http://maven.intersect.org.au:8081/artifactory/libs-releases"
-        mavenRepo "http://maven.intersect.org.au:8081/artifactory/plugins-releases"
-        //mavenCentral()
-        //mavenRepo "http://snapshots.repository.codehaus.org"
-        //mavenRepo "http://repository.codehaus.org"
-        //mavenRepo "http://download.java.net/maven/2/"
-        //mavenRepo "http://repository.jboss.com/maven2/"
+        mavenCentral()
+        mavenRepo "http://repo.grails.org/grails/core"
+        mavenRepo "https://bintray.com/grails/plugins"
+        grailsRepo "https://grails.org/plugins"
     }
 
     dependencies {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes eg.
 
          runtime 'mysql:mysql-connector-java:5.1.11'
+         compile 'org.compass-project:compass:2.1.4'
     }
-    
-    plugin("searchable") {
-        compile "org.compass-project:compass:2.1.4"
+
+    plugins {
+        build ':tomcat:9.0.0.M4.1'
+        compile ':hibernate:4.3.10.7'
     }
+
 }
 
 //cobertura
